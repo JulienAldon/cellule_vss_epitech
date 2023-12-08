@@ -1,0 +1,387 @@
+html {
+    --first-color: #0091D3;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    margin: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: black;
+}
+
+.paragraph-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph-left div {
+    width: 50%;
+}
+
+.paragraph-left div:last-child {
+    margin-left: 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: var(--first-color);
+}
+
+li:not(:last-child) { 
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+.epitech-logo {
+    height: 10rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.navigation > a {
+    background-color: #1f485e;
+    box-shadow: none;
+    /* border: solid 1px black; */
+    margin-bottom: 0.2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.navigation > a:hover {
+    background-color: white;
+    color: #1f485e;
+    transition: all ease-in-out 0.4s;
+    border: solid 1px #1f485e;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.how {
+    margin-right: 2rem;
+}
+
+.engagement {
+    display: flex;
+    flex-direction: row;
+}
+
+.engagement > div {
+    max-width: 60vw;
+    margin-right: 5rem;
+}
+
+.engagement-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.engagement >  p, li{
+    max-width: 60vw;
+    text-align: left;
+}
+
+.engagement > .testimony-button {
+    visibility: hidden;
+    display: none;
+}
+
+.resp {
+    display: flex;
+    flex-direction: row;
+}
+
+.resp-panel {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.volontary {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.volontary-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.volontary-img > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resp-img > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resp-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.resp-img {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony-button {
+    background-color: var(--first-color);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: none;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all ease-in-out 0.4s;
+    width: 15vw;
+}
+
+.testimony-button:hover {
+    background-color: white;
+    color: var(--first-color);
+    border: solid 1px var(--first-color);
+}
+
+.signaling {
+    display: flex;
+    flex-direction: row;
+}
+
+.signaling-text {
+    max-width: 60vw;
+}
+
+.iframe {
+    width: 30vw;
+    height: 70vh;
+}
+
+.signaling-button {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resp-text > div {
+    max-width: 60vw;
+}
+
+@media (max-width: 1250px) {
+    .epitech-logo {
+        height: 5rem;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .testimony-button {
+        padding: 2rem;
+        width: 7vw;
+        font-size: 0.8rem;
+        height: 1rem;
+        align-self: center;
+    }
+
+    .engagement {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    
+    .engagement > div {
+        max-width: 100vw;
+        width: 100%;
+
+    }
+
+    .engagement >  p, li{
+        max-width: 100vw;
+        width: 100%;
+        text-align: left;
+    }
+        
+    .engagement > .testimony-button {
+        visibility: hidden;
+        display: none;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 1rem;
+        margin-left: 0rem;
+    }
+
+    .navigation > a:not(:last-child) { 
+        margin-right: 1rem;
+    }
+
+    .volontary {
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .resp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resp-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .resp-text > div {
+        max-width: 100vw;
+    }
+
+    .resp-img {
+        margin-top: 2rem;
+    }
+
+    .resp-panel {
+        width: 100%;
+    }
+
+    .signaling {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signaling-text {
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .signaling-button > .testimony-button {
+        padding: 3rem;
+        width: 30vw;
+        font-size: 1.5rem;
+        height: 1rem;
+        align-self: center;
+        margin-top: 1rem;
+    }
+
+    .iframe {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    body {
+        margin: 5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        margin: 2rem;
+    }
+
+    header > .testimony-button {
+        visibility: hidden;
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation a {
+        justify-content: center;
+    }
+
+    .navigation > a:not(:last-child) { 
+        margin-right: 0rem;
+    }
+
+    .testimony-button {
+        width: 90%;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .paragraph-left {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .paragraph-left div {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .more-info {
+        flex-direction: column;
+    }
+    .how {
+        margin-right: 0px;
+    }
+    .iframe {
+        width: 100vw;
+    }
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    .volontary-img img {
+        width: 15rem;
+    }
+    .resp-img img {
+        width: 20rem;
+    }
+}
