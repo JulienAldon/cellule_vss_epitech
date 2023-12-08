@@ -32,6 +32,7 @@ a {
 }
 
 .paragraph-left div:last-child {
+    margin-top: 3rem;
     margin-left: 1rem;
 }
 
@@ -353,6 +354,11 @@ ul {
         width: 90%;
         font-size: 1.2rem;
         margin-top: 1rem;
+    }
+
+    .paragraph-left div:last-child {
+        margin-top: 0rem;
+        margin-left: 0rem;
     }
 
     .paragraph-left {
