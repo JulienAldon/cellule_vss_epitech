@@ -36,6 +36,10 @@ a {
     margin-left: 1rem;
 }
 
+.signaling-button > .testimony-button {
+    padding: 3rem;
+}
+
 section {
     margin-bottom: 3rem;
 }
