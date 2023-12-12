@@ -352,8 +352,13 @@ ul {
         display: none;
     }
 
+    .engagement {
+        padding-top: 2rem;
+    }
+
     header {
         flex-direction: column;
+        padding-bottom: 1rem;
     }
 
     .navigation {
