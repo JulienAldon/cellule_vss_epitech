@@ -72,8 +72,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-bottom: 1rem;
-    padding-right:2rem;
 }
 
 .engagements-img {
