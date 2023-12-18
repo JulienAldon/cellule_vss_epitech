@@ -13,7 +13,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* margin-bottom: 4rem; */
     padding-bottom: 4rem;
 }
 
@@ -23,25 +22,6 @@ p {
 
 a {
     color: black;
-}
-
-.paragraph-left {
-    display: flex;
-    flex-direction: row;
-}
-
-.paragraph-left div {
-    width: 50%;
-}
-
-.paragraph-left div:last-child {
-    margin-top: 3rem;
-    margin-left: 1rem;
-}
-
-.signaling-button > .testimony-button {
-    padding: 3rem;
-    margin: 1rem;
 }
 
 section {
@@ -61,6 +41,25 @@ li:not(:last-child) {
 
 ul {
     padding-left: 1rem;
+}
+
+.paragraph-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph-left div {
+    width: 50%;
+}
+
+.paragraph-left div:last-child {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.signaling-button > .testimony-button {
+    padding: 3rem;
+    margin: 1rem;
 }
 
 .epitech-logo {
