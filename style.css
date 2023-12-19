@@ -363,6 +363,7 @@ ul {
 
     .navigation {
         flex-direction: column;
+        padding: 0px;
     }
 
     .navigation a {
