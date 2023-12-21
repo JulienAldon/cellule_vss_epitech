@@ -118,13 +118,40 @@ ul {
     padding-bottom: 6rem;
     background-color: var(--epitech-violet);
     color: var(--light-1);
+    position: relative;
 }
 
-.engagement h2 {
+.engagement-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.engagement-box:after, .engagement-box:before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: calc(50% + .5px);
+    height: 50px;
+    z-index: 9;
+    background: #FFF;
+}
+
+.engagement-box:before {
+    left: 0;
+    border-top-right-radius: 5rem;
+}
+
+.engagement-box:after {
+    right: 0;
+    border-top-left-radius: 5rem;
+}
+
+
+.engagement-box h2 {
     color: var(--light-1);
 }
 
-.engagement > div {
+.engagement-box > div {
     max-width: 60vw;
     margin-right: 5rem;
 }
@@ -134,12 +161,12 @@ ul {
     flex-direction: column;
 }
 
-.engagement >  p, li{
+.engagement-box >  p, li{
     max-width: 60vw;
     text-align: left;
 }
 
-.engagement > .testimony-button {
+.engagement-box > .testimony-button {
     visibility: hidden;
     display: none;
 }
@@ -264,24 +291,24 @@ ul {
         align-self: center;
     }
 
-    .engagement {
+    .engagement-box {
         display: flex;
         flex-flow: column-reverse;
     }
     
-    .engagement > div {
+    .engagement-box > div {
         max-width: 100vw;
         width: 100%;
 
     }
 
-    .engagement >  p, li{
+    .engagement-box >  p, li{
         max-width: 100vw;
         width: 100%;
         text-align: left;
     }
         
-    .engagement > .testimony-button {
+    .engagement-box > .testimony-button {
         visibility: hidden;
         display: none;
     }
@@ -369,7 +396,7 @@ ul {
         display: none;
     }
 
-    .engagement {
+    .engagement-box {
         padding-top: 2rem;
     }
 
