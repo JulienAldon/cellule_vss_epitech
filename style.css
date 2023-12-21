@@ -1,6 +1,8 @@
 html {
-    --epitech-blue: #0091D3;
-    --epitech-violet: #604696;
+    --epitech-blue: #0090D2;
+    --epitech-violet: rgba(96, 70, 150);
+    --epitech-dark-blue: #1F495E;
+    --light-1: white;
     font-family: 'Mulish', sans-serif;
 }
 
@@ -9,7 +11,7 @@ body {
 }
 
 header {
-    background-color: rgba(96, 70, 150, 0.4);
+    background-color: var(--epitech-violet);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,7 +69,7 @@ ul {
 }
 
 .navigation {
-    background-color: rgba(96, 70, 150, 0.4);
+    background-color: var(--epitech-violet);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -80,24 +82,25 @@ ul {
 }
 
 .navigation > a {
-    background-color: #1f485e;
+    background-color: var(--epitech-dark-blue);
     box-shadow: none;
     margin-bottom: 0.2rem;
     padding: 2rem;
     text-decoration: none;
-    color: white;
+    color: var(--light-1);
     font-weight: bold;
     align-items: center;
     display: flex;
     border-radius: 1rem;
     margin-left: 1rem;
+    border: solid 1px transparent;
 }
 
 .navigation > a:hover {
-    background-color: white;
+    background-color: var(--light-1);
     color: #1f485e;
     transition: all ease-in-out 0.4s;
-    border: solid 1px #1f485e;
+    border: solid 1px var(--epitech-dark-blue);
 }
 
 .more-info {
@@ -113,7 +116,12 @@ ul {
     display: flex;
     flex-direction: row;
     padding-bottom: 6rem;
-    background-color: rgba(96, 70, 150, 0.4);
+    background-color: var(--epitech-violet);
+    color: var(--light-1);
+}
+
+.engagement h2 {
+    color: var(--light-1);
 }
 
 .engagement > div {
@@ -188,7 +196,7 @@ ul {
 }
 
 .testimony-button {
-    background-color: white;
+    background-color: var(--light-1);
     border-radius: 1rem;
     color: var(--epitech-blue);
     box-shadow: none;
@@ -206,14 +214,19 @@ ul {
 
 .testimony-button:hover {
     background-color: var(--epitech-blue);
-    color: white;
+    color: var(--light-1);
 }
 
 .signaling {
     display: flex;
     flex-direction: row;
     margin: 0rem;
-    background-color: rgba(0, 145, 211, 0.4);
+    background-color: var(--epitech-blue);
+    color: var(--light-1);
+}
+
+.signaling h2 {
+    color: var(--light-1);
 }
 
 .signaling-text {
@@ -279,6 +292,11 @@ ul {
         margin: auto;
     }
 
+    .navigation {
+        padding-right: 1rem;
+        padding-left: 1rem
+    }
+
     .navigation a {
         text-align: center;
         padding: 1rem;
@@ -292,7 +310,6 @@ ul {
     .volontary {
         display: flex;
         flex-wrap: wrap;
-        /* flex-direction: row; */
         padding: 2rem;
         align-items: center;
         justify-content: center;

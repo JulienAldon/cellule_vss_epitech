@@ -1,0 +1,187 @@
+.footer-navigation {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.footer-navigation-list {
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navigation-item {
+    align-items: center;
+    background-color: inherit;
+    display: flex;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-item-content {
+    color: #849AA6;
+    display: flex;
+    gap: 8px;
+}
+
+.navigation-item-content:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-right: 2px solid #74A4B3;
+    border-top: 2px solid #74A4B3;
+    top: 0;
+    left: 4px;
+    margin-top: 4px;
+    transition: all 0.3s ease;
+}
+
+.navigation-item-content:before {
+    content: '';
+    height: 2px;
+    min-width: 17px;
+    display: block;
+    background: #74A4B3;
+    margin-top: 11px;
+    rotate: -45deg;
+    margin-left: 2px;
+    transition: all .3s ease;
+}
+
+.navigation-item:hover .navigation-item-content:before {
+    rotate: 0deg;
+    margin-top: 9px;
+    min-width: 32px;
+}
+
+.navigation-item:hover .navigation-item-content:after {
+    rotate: 45deg;
+    left: 22px;
+}
+
+.navigation-item-label {
+    overflow-wrap: break-word;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--epitech-dark-blue);
+}
+
+footer .epitech-logo {
+    color: #74A4B3;
+    width: 15rem;
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.footer-box p {
+    color: #74A4B3;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    flex-basis: 100%;
+    margin-right: 5rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 5rem;
+}
+
+.footer:before, .footer:after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    width: calc(50% + .5px);
+    height: 50px;
+    z-index: 9;
+    background: #FFF;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer:before {
+    left: 0;
+    border-bottom-right-radius: 5rem;
+}
+
+.footer:after {
+    right: 0;
+    border-bottom-left-radius: 5rem;
+}
+
+.footer-rs-link {
+    fill: #74A4B3;
+    color: unset;
+}
+
+.footer-rs-icons {
+    fill: #74A4B3;
+    width: 2rem;
+    transition: all ease 0.2s;
+}
+
+.footer-rs-list-item {
+    text-decoration: transparent;
+}
+
+.footer-rs-list-item:not(:first-child) {
+    margin-left: 0.8rem;
+}
+
+.footer-rs-list {
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-rs-list-item:hover .footer-rs-icons {
+    fill: white;
+}
+
+@media (max-width: 1250px) {
+    .footer-box {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    footer .epitech-logo {
+        margin-top: 5rem;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .footer-box {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-box p {
+        margin: 0px;
+        font-size: 0.7rem;
+    }
+    
+}
